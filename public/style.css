@@ -15,6 +15,24 @@ header {
   position: relative;
 }
 
+.logo-header {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.logo-header img {
+  height: 60px;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
 #container {
   display: flex;
   height: calc(100vh - 80px);
@@ -74,34 +92,4 @@ button {
   color: white;
   border: none;
   cursor: pointer;
-}
-
-/* Logo animé à gauche du titre */
-.logo-header {
-  display: inline-block;
-  vertical-align: middle;
-  animation: pulse 2s infinite;
-}
-
-.logo-header img {
-  height: 60px;
-  vertical-align: middle;
-}
-
-header h1 {
-  display: inline-block;
-  margin-left: 10px;
-  vertical-align: middle;
-}
-
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
-  }
-  100% {
-    transform: scale(1);
-  }
 }
