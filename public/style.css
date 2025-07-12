@@ -76,16 +76,22 @@ button {
   cursor: pointer;
 }
 
-.logo-background {
-  position: absolute;
-  top: 10px;
-  right: 10px;
+/* Logo animé à gauche du titre */
+.logo-header {
+  display: inline-block;
+  vertical-align: middle;
   animation: pulse 2s infinite;
-  z-index: 10;
 }
 
-.logo-background img {
-  width: 150px;
+.logo-header img {
+  height: 60px;
+  vertical-align: middle;
+}
+
+header h1 {
+  display: inline-block;
+  margin-left: 10px;
+  vertical-align: middle;
 }
 
 @keyframes pulse {
