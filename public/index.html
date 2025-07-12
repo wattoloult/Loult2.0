@@ -8,12 +8,17 @@
 <body>
   <header>
     <h1>💬 Loult 2.0</h1>
+    <div class="logo-background">
+      <img src="assets/logo-loult.png" alt="Loult 2.0">
+    </div>
   </header>
+
   <div id="container">
     <aside id="users">
       <h2>Utilisateurs</h2>
       <ul id="user-list"></ul>
     </aside>
+
     <main id="chat">
       <div id="chat-box"></div>
       <div id="input-area">
@@ -22,13 +27,9 @@
       </div>
     </main>
   </div>
+
+  <!-- Scripts -->
   <script src="/socket.io/socket.io.js"></script>
   <script src="client.js"></script>
 </body>
 </html>
-<div class="logo-background">
-  <img src="assets/logo-loult.png" alt="Loult 2.0">
-</div>
-git add .
-git commit -m "Ajout du logo Loult animé"
-git push
